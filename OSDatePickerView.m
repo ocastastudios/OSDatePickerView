@@ -9,11 +9,6 @@
 #import "OSDatePickerView.h"
 #import "NSString+OSDate.h"
 #import "NSDate+OSDateFormatter.h"
-#import "NSDate+EasyCarClub.h"
-
-//
-//#define TEXT_FIELD_TAG_DATE_FROM 101111
-//#define TEXT_FIELD_TAG_DATE_TO   101112
 
 @interface OSDatePickerView ()
 {
@@ -218,7 +213,7 @@
     if (to < from)
     {
         _dateTo = _dateFrom;
-        _txtDateTo.text = [self stringFromDate:_dateTo];// [_dateTo slidDateAndTimeString];
+        _txtDateTo.text = [self stringFromDate:_dateTo];
     }
     
     
@@ -226,7 +221,7 @@
     if (from > to)
     {
         _dateFrom = _dateTo;
-        _txtDateFrom.text = [self stringFromDate:_dateFrom];//slidDateAndTimeString];
+        _txtDateFrom.text = [self stringFromDate:_dateFrom];
     }
     
     
